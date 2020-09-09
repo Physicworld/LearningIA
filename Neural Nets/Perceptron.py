@@ -104,9 +104,9 @@ def main():
 
 	Tabla de verdad:
 
-	0 | 0 | 1
+	0 | 0 | 0
 	0 | 1 | 0
-	1 | 0 | 1
+	1 | 0 | 0
 	1 | 1 | 1
 
 	'''
@@ -120,7 +120,7 @@ def main():
 
 	training_set = np.array([
 
-		[0, 0, 1],
+		[0, 0, 0],
 		[0, 1, 0],
 		[1, 0, 0],
 		[1, 1, 1]
@@ -154,7 +154,23 @@ def main():
 	plt.ylabel('Valor de convergencia')
 	plt.show()
 
+	#Comprobando que aprendio de forma correcta
 
+	print(perceptron_and._Propagation_([1,0,0]))
+
+
+	'''
+	Problema:
+	Cree un perceptron que aprenda la funcion logica OR
+
+	Tabla de verdad:
+
+	0 | 0 | 0
+	0 | 1 | 1
+	1 | 0 | 1
+	1 | 1 | 1
+
+	'''
 
 
 if __name__ == '__main__':
